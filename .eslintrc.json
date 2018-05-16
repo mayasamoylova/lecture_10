@@ -1,0 +1,11 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true
+  },
+  "extends": "eslint-config-es5",
+  "rules": {
+    "no-console": "off"
+  }
+}
