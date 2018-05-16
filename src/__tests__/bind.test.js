@@ -38,20 +38,15 @@ describe('bind(fn, context)', function () {
   });
 
   it('binds arguments', function () {
-    var initialFn = function (digit) {
-      return this;
-    };
-
     var initialArg = 10;
     var changedArg = 20;
 
-    var test = {
-      boundFn: global.bind(initialFn, context, initialArg),
+    var initialFn = function (data) {
+      return data;
     };
 
-    jest.spyOn(test, 'boundFn');
+    var boundFn = bind(initialFn, context, initialArg);
 
-    expect(test.boundFn.call(changedContext, changedArg)).toBe(context);
-    expect(test.boundFn).toHaveBeenCalledWith(initialArg);
+    expect(boundFn.call(changedContext, changedArg)).toBe(initialArg);
   });
 });
