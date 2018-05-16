@@ -1,3 +1,0 @@
-global.measureExecutionTime = function (fn) {
-
-};
