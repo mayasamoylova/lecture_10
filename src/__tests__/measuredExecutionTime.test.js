@@ -36,7 +36,7 @@ describe('measureExecutionTime(fn)', function () {
   });
 
   it('calls console.time, targetFn and console.timeEnd in a right order', function () {
-    var expectedResult = ['console.time', 'target function', 'console.timeEnd'];
+    var expectedResult = ['console.time', 'target function', 'console.timeEnd', ];
     var actualResult = [];
 
     console.time = function () {

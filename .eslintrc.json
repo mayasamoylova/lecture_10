@@ -2,10 +2,17 @@
   "env": {
     "browser": true,
     "commonjs": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": "eslint-config-es5",
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "func-names": "off",
+    "space-before-function-paren": "off",
+    "comma-dangle": [
+      "off",
+      "ignore"
+    ]
   }
 }

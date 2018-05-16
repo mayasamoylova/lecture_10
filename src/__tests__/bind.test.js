@@ -45,7 +45,7 @@ describe('bind(fn, context)', function () {
       return data;
     };
 
-    var boundFn = bind(initialFn, context, initialArg);
+    var boundFn = global.bind(initialFn, context, initialArg);
 
     expect(boundFn.call(changedContext, changedArg)).toBe(initialArg);
   });
