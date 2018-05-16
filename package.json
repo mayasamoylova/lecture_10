@@ -2,9 +2,10 @@
   "name": "lecture_10",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "lint": "npx eslint ."
+    "lint": "npx eslint .",
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/FED-PRO-04-18/lecture_10#readme",
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-config-es5": "^0.5.0"
+    "eslint-config-es5": "^0.5.0",
+    "jest": "^22.4.3"
   }
 }
